@@ -26,8 +26,9 @@ public class HelloApplication {
 		gameRepository.deleteAll();
 
 	GameEntity firstData = new GameEntity();
-	firstData.GameName = "Assassin's Creed Origins";
+	firstData.GameName = "Assassins Creed Origins";
 	firstData.Publisher = "UBISOFT";
+	firstData.release_date = "27 Octombrie 2017";
 	firstData.Review = "9/10";
 
 	gameRepository.save(firstData);

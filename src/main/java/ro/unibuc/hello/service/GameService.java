@@ -34,6 +34,7 @@ public class GameService {
 
         game.GameName = (gameDetails.GameName);
         game.Publisher = (gameDetails.Publisher);
+        game.release_date = (gameDetails.release_date);
         game.Review = (gameDetails.Review);
 
         return gameRepository.save(game);
@@ -52,7 +53,7 @@ public class GameService {
         String result = "";
         for(int i = 0; i< entities.size();i++) {
             GameEntity entity = entities.get(i);
-            result = result + entity.GameName + " " + entity.Publisher + " " + entity.Review + "\n\n";
+            result = result + entity.GameName + " " + entity.Publisher + " " + entity.release_date + " " + entity.Review + "\n\n";
         }
 
         return new Gamedto(counter.incrementAndGet(), result);
@@ -65,7 +66,7 @@ public class GameService {
         String result = "";
         for(int i = 0; i< entities.size();i++) {
             GameEntity entity = entities.get(i);
-            result = result + entity.GameName + " " + entity.Publisher + " " + entity.Review + "\n";
+            result = result + entity.GameName + " " + entity.Publisher + " " + entity.release_date + " " + entity.Review + "\n";
         }
 
         return new Gamedto(counter.incrementAndGet(), result);
