@@ -53,7 +53,7 @@ public class GameService {
         String result = "";
         for(int i = 0; i< entities.size();i++) {
             GameEntity entity = entities.get(i);
-            result = result + entity.GameName + " " + entity.Publisher + " " + entity.release_date + " " + entity.Review + " \n";
+            result = result + entity.GameName + " " + entity.Publisher + " " + entity.release_date + " " + entity.Review + "\n";
         }
 
         return new Gamedto(counter.incrementAndGet(), result);
