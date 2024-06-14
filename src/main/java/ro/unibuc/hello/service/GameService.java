@@ -73,5 +73,9 @@ public class GameService {
 
     }
 
+    public void deleteAllGames() {
+        gameRepository.deleteAll();
+    }
+
     
 }
