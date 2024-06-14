@@ -1,19 +1,20 @@
 package ro.unibuc.hello.dto;
 
-public class Greeting {
-
-    private String id;
+public class Gamedto {
+    private long id;
     private String content;
 
-    public Greeting() {
+    public Gamedto() {
+    
     }
 
-    public Greeting(String id, String content) {
+    public Gamedto(long id, String content) {
         this.id = id;
         this.content = content;
+
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -21,7 +22,7 @@ public class Greeting {
         this.content = content;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
